@@ -1,0 +1,9 @@
+--- # Simple playbook as a test
+
+- hosts: localhost
+  tasks:
+    - name: Run Setup Module to give some sample text
+      setup:
+      register: WOWresults
+    - debug:
+        var: WOWresults
