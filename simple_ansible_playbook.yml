@@ -1,6 +1,6 @@
 --- # Simple playbook as a test
 
-- hosts: localhost
+- hosts: all
   tasks:
     - name: Run Setup Module to give some sample text
       setup:
